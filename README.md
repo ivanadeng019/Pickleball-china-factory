@@ -1,3 +1,4 @@
+
 <html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,13 +90,21 @@
             <div class="max-w-4xl mx-auto bg-light rounded-2xl p-8 md:p-10 shadow-md border border-gray-100">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-2/5">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/f440a399defd4faf8e0062804803bec8~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753414454&amp;x-signature=u6Ms5WMY52ZUTpgN%2BgBBNpSgwjc%3D" alt="Our factory workshop" class="rounded-xl shadow-md w-full h-auto">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/85aea74e9386409a994f2e1d91d8f094~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429548&amp;x-signature=y0BMBLCP4MX5%2BvIk0COXASxVQ%2Bs%3D" alt="Our factory workshop with workers crafting pickleball paddles" class="rounded-xl shadow-md w-full h-auto">
                     </div>
                     <div class="md:w-3/5">
-                        <p class="text-gray-700 mb-4 leading-relaxed">&nbsp;We have been deeply involved in Pickleball Paddle customization and contract manufacturing, offering professional services to numerous renowned global brands.</p>
-                        <p class="text-gray-700 mb-4 leading-relaxed">Our team comprises both seasoned master craftsmen and innovative young talents. We are dedicated to delivering the highest quality service.</p>
-                        <p class="text-gray-700 leading-relaxed">From material selection to process refinement, every detail is meticulously controlled in accordance with international standards—whether it involves performance customization for professional competitions or mass production contract manufacturing for the broader market, we can precisely meet brand requirements.</p>
-                        <p class="text-gray-700 font-semibold mt-6">With our robust production capabilities and customization expertise, we empower global brands to excel in competition and thrive in the marketplace.</p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            We have been deeply involved in Pickleball Paddle customization and contract manufacturing, offering professional services to numerous renowned global brands.
+                        </p>
+                        <p class="text-gray-700 mb-4 leading-relaxed">
+                            Our team comprises both seasoned master craftsmen and innovative young talents. We are dedicated to delivering the highest quality service.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed">
+                            From material selection to process refinement, every detail is meticulously controlled in accordance with international standards—whether it involves performance customization for professional competitions or mass production contract manufacturing for the broader market, we can precisely meet brand requirements.
+                        </p>
+                        <p class="text-gray-700 font-semibold mt-6">
+                            With our robust production capabilities and customization expertise, we empower global brands to excel in competition and thrive in the marketplace.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -114,7 +123,7 @@
                 <!-- Product 1 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/7cb949737119452ab69dd00ed69ddc30~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753415095&amp;x-signature=371j1KH%2BE6wC3unMv73VeOqE0J8%3D" alt="Fiberglass pickleball paddle" class="h-36 object-contain">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/68d2d760b0aa45abaec58545b22b5825~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429613&amp;x-signature=kj0InYMTQd1EtCgwJFgI2hOZUaI%3D" alt="Fiberglass pickleball paddle with smooth surface" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -131,7 +140,7 @@
                 <!-- Product 2 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p3-search.byteimg.com/obj/labis/image/a97963a30359d80aaeb4a2c7b6a4d75e" alt="Carbon Fiber pickleball paddle" class="h-36 object-contain">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/e82a9a2da084445381a4e9ca7e94beb1~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429806&amp;x-signature=durQp%2F8VCXaxMcqiB96U7M15vm0%3D" alt="Carbon Fiber pickleball paddle with textured surface" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -148,7 +157,7 @@
                 <!-- Product 3 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/931b4a670462427d9df34f43cfe04dca~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753414986&amp;x-signature=Z3qF34cxpIENEJOGkvP%2BFdJpueo%3D" alt="Carbon Fiber 3K/12K/18K paddle" class="h-36 object-contain">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/cac148abf9ef4a77a589b7b80af1c37a~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429678&amp;x-signature=86%2F%2F7ccCUbBJXGTJfE9HYcYZvM0%3D" alt="Carbon Fiber 3K/12K/18K paddle with woven pattern" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -165,14 +174,14 @@
                 <!-- Product 4 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/c2b71b635ac34650a5ab25f6596e281f~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753415475&amp;x-signature=Ko0CHdll%2Bxz7aLci6ny63Mk9tqI%3D" alt="3D Carbon Fiber paddle" class="h-36 object-contain">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/9f490f664ff34e1faa19423a064d1da3~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429889&amp;x-signature=K%2BdLtauCgc%2FjC42ehCf8lcD9cto%3D" alt="3D Carbon Fiber paddle with advanced structure" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg">3D 12K/18K Carbon Fiber</h3>
+                            <h3 class="font-bold text-lg">PE BALLS</h3>
                             <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
                         </div>
-                        <p class="text-gray-600 text-sm mb-3">Advanced 3D construction for optimal performance</p>
+                        <p class="text-gray-600 text-sm mb-3">Outdoor &amp; Indoor</p>
                         <div class="text-xs text-gray-500">
                             <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
                         </div>
@@ -182,7 +191,7 @@
                 <!-- Product 5 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/f47a7d1d7acc4fb989235ecd163a86c4~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753415167&amp;x-signature=Tdx%2FAsU0veN8vASnNCVTuE%2FS1Hs%3D" alt="KEVLAR pickleball paddle" class="h-36 object-contain">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/d5f78b3a1ba34c4db166c0da03bc8362~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429737&amp;x-signature=aJVnj0OjQu9cjwqObhaNjnV4kiU%3D" alt="KEVLAR pickleball paddle with distinctive finish" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
@@ -199,11 +208,11 @@
                 <!-- Product 6 -->
                 <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
                     <div class="h-48 bg-blue-50 flex items-center justify-center">
-                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/69b70f8150f84a8d9a7ceb311a265d66~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753415253&amp;x-signature=MEOGWEtjqYe1rpGruF4UK7D9eNE%3D" alt="Titanium and TorayT700 paddles" class="h-36 object-contain">
+                        <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/84f2fe3b76794de4b5d365469698dcd2~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429765&amp;x-signature=kg8LTZsUATpiNX8qye9UHYuSHz8%3D" alt="Titanium pickleball paddle with premium finish" class="h-36 object-contain">
                     </div>
                     <div class="p-6">
                         <div class="flex justify-between items-start mb-2">
-                            <h3 class="font-bold text-lg">Titanium&nbsp;</h3>
+                            <h3 class="font-bold text-lg">Titanium</h3>
                             <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
                         </div>
                         <p class="text-gray-600 text-sm mb-3">Premium materials for professional performance</p>
@@ -678,5 +687,4 @@
         window.dispatchEvent(new Event('scroll'));
     </script>
 
-
-    </body></html>
+</body></html>
