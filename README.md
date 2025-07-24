@@ -1,621 +1,692 @@
-            <!-- Dual Focus Badge -->
-            <div class="inline-block bg-secondary text-white px-4 py-2 rounded-full text-sm font-semibold mb-6 highlight-badge">
-                <i class="fa fa-cogs mr-2"></i> Custom Services &amp; <i class="fa fa-handshake-o ml-2"></i> Partnership Opportunities
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFPICK &amp; JOYCSPS - Professional Pickleball Factory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D3748', // 深灰色主色调，科技感
+                        secondary: '#3182CE', // 蓝色辅助色
+                        accent: '#ED8936', // 橙色强调色
+                        light: '#F7FAFC',
+                        dark: '#1A202C'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .bg-gradient-tech {
+                background: linear-gradient(135deg, #2D3748 0%, #4A5568 100%);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+            .video-container {
+                aspect-ratio: 16 / 9;
+                background-color: #2D3748;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+            }
+            .video-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2">
+                <span class="text-secondary text-3xl"><i class="fa fa-cube"></i></span>
+                <span class="font-bold text-xl text-primary">JFPICK <span class="text-secondary">&amp;</span> JOYCSPS</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-gray-700 hover:text-secondary transition-colors">About</a>
+                <a href="#products" class="text-gray-700 hover:text-secondary transition-colors">Products</a>
+                <a href="#core-tech" class="text-gray-700 hover:text-secondary transition-colors">Core Tech</a>
+                <a href="#services" class="text-gray-700 hover:text-secondary transition-colors">Services</a>
+                <a href="#quality" class="text-gray-700 hover:text-secondary transition-colors">Quality</a>
+                <a href="#contact" class="text-gray-700 hover:text-secondary transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-700 text-xl" id="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+        <!-- 移动端菜单 -->
+        <div class="md:hidden hidden bg-white absolute w-full border-b border-gray-200" id="mobile-menu">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="#about" class="text-gray-700 hover:text-secondary transition-colors py-2">About</a>
+                <a href="#products" class="text-gray-700 hover:text-secondary transition-colors py-2">Products</a>
+                <a href="#core-tech" class="text-gray-700 hover:text-secondary transition-colors py-2">Core Tech</a>
+                <a href="#services" class="text-gray-700 hover:text-secondary transition-colors py-2">Services</a>
+                <a href="#quality" class="text-gray-700 hover:text-secondary transition-colors py-2">Quality</a>
+                <a href="#contact" class="text-gray-700 hover:text-secondary transition-colors py-2">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄区域 -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-tech text-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-shadow mb-6">
+                        Professional Pickleball<br>
+                        <span class="text-white/90 text-[clamp(1.5rem,3vw,2.5rem)]">Manufacturing Excellence</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-white/90 mb-8 max-w-lg">Leading manufacturer ,delivering professional pickleball equipments worldwide for:Brands,Clubs,whosalers...</p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#contact" class="bg-white text-primary font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-all shadow-md">
+                            Contact Us
+                        </a>
+                        <a href="#products" class="bg-transparent border-2 border-white text-white font-bold px-8 py-3 rounded-lg hover:bg-white/10 transition-all">
+                            View Products
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 relative">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/ca2560cc511448a8a88f75e9884cc738~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753943503&amp;x-signature=ADYUBy1SYZ%2BOmA52hKbW%2Br65kN4%3D" alt="Pickleball manufacturing facility" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 视频区域 -->
+    <section class="py-16 bg-white border-b border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-[clamp(1.5rem,3vw,2rem)] font-bold text-primary mb-4">Factory &amp; Production Showcase</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Watch our manufacturing process and quality standards in action</p>
             </div>
             
-            <div class="flex flex-wrap gap-4">
-                <a href="#customization" class="inline-block bg-custom hover:bg-custom/90 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Explore Custom Solutions <i class="fa fa-arrow-right ml-2"></i>
-                </a>
-                <a href="#partnership" class="inline-block bg-white hover:bg-gray-100 text-primary font-semibold px-6 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-                    Partnership Opportunities <i class="fa fa-users ml-2"></i>
-                </a>
+            <div class="max-w-4xl mx-auto">
+                <div class="video-container rounded-lg shadow-md mb-4 overflow-hidden">
+                    <!-- 本地视频播放 -->
+                    <div class="video-wrapper">
+                        <video controls class="w-full h-full object-contain" poster="https://picsum.photos/id/28/1280/720" preload="metadata">
+                            <source src="factory.mp4" type="video/mp4">
+                            <source src="factory.webm" type="video/webm">
+                            <source src="factory.ogg" type="video/ogg">
+                            <!-- 视频无法播放时显示的内容 -->
+                            <div class="text-center p-8">
+                                <i class="fa fa-exclamation-circle text-5xl mb-4"></i>
+                                <p>Your browser does not support the video tag.</p>
+                                <p class="mt-2">Please download the video to view: <a href="factory.mp4" class="text-secondary hover:underline">factory.mp4</a></p>
+                            </div>
+                        </video>
+                    </div>
+                </div>
+                <p class="text-sm text-gray-500 text-center">Production process and factory tour video</p>
             </div>
         </div>
-    </div>
-</header>
+    </section>
 
-<!-- Story Background Section -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-dark">Our Story</h2>
-        
-        <div class="max-w-4xl mx-auto bg-light rounded-2xl p-8 md:p-10 shadow-md border border-gray-100">
-            <div class="flex flex-col md:flex-row items-center gap-8">
-                <div class="md:w-2/5">
-                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/85aea74e9386409a994f2e1d91d8f094~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429548&amp;x-signature=y0BMBLCP4MX5%2BvIk0COXASxVQ%2Bs%3D" alt="Our factory workshop with workers crafting pickleball paddles" class="rounded-xl shadow-md w-full h-auto">
-                </div>
-                <div class="md:w-3/5">
-                    <p class="text-gray-700 mb-4 leading-relaxed">
-                        We have been deeply involved in Pickleball Paddle customization and contract manufacturing, offering professional services to numerous renowned global brands.
-                    </p>
-                    <p class="text-gray-700 mb-4 leading-relaxed">
-                        Our team comprises both seasoned master craftsmen and innovative young talents. We are dedicated to delivering the highest quality service.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        From material selection to process refinement, every detail is meticulously controlled in accordance with international standards—whether it involves performance customization for professional competitions or mass production contract manufacturing for the broader market, we can precisely meet brand requirements.
-                    </p>
-                    <p class="text-gray-700 font-semibold mt-6">
-                        With our robust production capabilities and customization expertise, we empower global brands to excel in competition and thrive in the marketplace.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Products Section with Custom Options -->
-<section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Our Pickleball Paddles</h2>
-        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            A wide range of high-quality paddles available for customization, distribution and retail
-        </p>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Product 1 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/68d2d760b0aa45abaec58545b22b5825~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429613&amp;x-signature=kj0InYMTQd1EtCgwJFgI2hOZUaI%3D" alt="Fiberglass pickleball paddle with smooth surface" class="h-36 object-contain">
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">Fiberglass Paddle</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Durable and lightweight with excellent ball control</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
+    <!-- 关于我们 -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">About Us</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Professional pickleball manufacturer committed to delivering high-quality equipment and customization services globally</p>
             </div>
 
-            <!-- Product 2 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/e82a9a2da084445381a4e9ca7e94beb1~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429806&amp;x-signature=durQp%2F8VCXaxMcqiB96U7M15vm0%3D" alt="Carbon Fiber pickleball paddle with textured surface" class="h-36 object-contain">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/9f79431b92704f05bd032eb810afe275~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945024&amp;x-signature=vCH4kktT0tUz4AwAVqYiVUFGLPg%3D" alt="Factory workshop with machinery" class="rounded-lg shadow-md w-full h-auto">
                 </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">T300/T700/T800 Carbon Fiber</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Cold &amp; Thermoformed press options</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/cac148abf9ef4a77a589b7b80af1c37a~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429678&amp;x-signature=86%2F%2F7ccCUbBJXGTJfE9HYcYZvM0%3D" alt="Carbon Fiber 3K/12K/18K paddle with woven pattern" class="h-36 object-contain">
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">3K 12k 18kCarbon Fiber</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Available in cold and thermoformed varieties</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/9f490f664ff34e1faa19423a064d1da3~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429889&amp;x-signature=K%2BdLtauCgc%2FjC42ehCf8lcD9cto%3D" alt="3D Carbon Fiber paddle with advanced structure" class="h-36 object-contain">
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">PE BALLS</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Outdoor &amp; Indoor</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/d5f78b3a1ba34c4db166c0da03bc8362~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429737&amp;x-signature=aJVnj0OjQu9cjwqObhaNjnV4kiU%3D" alt="KEVLAR pickleball paddle with distinctive finish" class="h-36 object-contain">
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">KEVLAR Paddle</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Cold and thermoformed press options</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
-                <div class="h-48 bg-blue-50 flex items-center justify-center">
-                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/84f2fe3b76794de4b5d365469698dcd2~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753429765&amp;x-signature=kg8LTZsUATpiNX8qye9UHYuSHz8%3D" alt="Titanium pickleball paddle with premium finish" class="h-36 object-contain">
-                </div>
-                <div class="p-6">
-                    <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-lg">Titanium</h3>
-                        <span class="bg-custom/10 text-custom px-2 py-1 rounded text-xs">Customizable</span>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-3">Premium materials for professional performance</p>
-                    <div class="text-xs text-gray-500">
-                        <i class="fa fa-paint-brush mr-1"></i> Custom colors, logos &amp; designs available
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- New Inner Cores Section -->
-        <div class="mt-16 bg-primary/5 rounded-xl p-8 border border-primary/10">
-            <h3 class="text-2xl font-bold mb-4 text-primary">New Inner Core Options</h3>
-            <p class="text-gray-600 mb-6">All core materials can be paired with custom outer designs and branding</p>
-            <div class="grid md:grid-cols-2 gap-6">
-                <div class="flex items-start">
-                    <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                        <i class="fa fa-cube text-primary"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-lg mb-1">Foam</h4>
-                        <p class="text-gray-600">Advanced foam core technology for improved feel and control</p>
-                    </div>
-                </div>
-                <div class="flex items-start">
-                    <div class="bg-primary/10 p-3 rounded-lg mr-4">
-                        <i class="fa fa-cubes text-primary"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-lg mb-1">Eva foam wall+pp(+PU)</h4>
-                        <p class="text-gray-600">Multi-layer composite core for optimal power and durability</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Customization Section -->
-<section id="customization" class="py-20 bg-gradient-to-br from-custom/5 to-primary/5">
-    <div class="container mx-auto px-6">
-        <div class="max-w-3xl mx-auto text-center mb-16">
-            <span class="inline-block bg-custom text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Specialty</span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-dark">Custom Solutions for Brands &amp; Clubs</h2>
-            <p class="text-xl text-gray-600">
-                Tailored pickleball paddles designed to match your brand identity or club requirements
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <!-- Customization Option 1 -->
-            <div class="bg-white rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-paint-brush text-2xl text-custom"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Design Customization</h3>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Custom graphics &amp; color schemes</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Brand logo placement</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Custom handle designs</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Unique surface patterns</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Customization Option 2 -->
-            <div class="bg-white rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-cogs text-2xl text-custom"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Material Customization</h3>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Material selection</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Core technology options</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Weight specifications</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Performance tuning</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Customization Option 3 -->
-            <div class="bg-white rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-custom/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-box text-2xl text-custom"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Brand &amp; Packaging</h3>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Complete OEM branding</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Custom packaging design</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Private label options</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-custom mt-1 mr-2"></i>
-                        <span>Custom labeling</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Partnership & Recruitment Section -->
-<section id="partnership" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <div class="max-w-3xl mx-auto text-center mb-16">
-            <span class="inline-block bg-secondary text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">Join Our Network</span>
-            <h2 class="text-3xl md:text-5xl font-bold mb-6 text-dark">We Welcome Retailers, Agents &amp; Distributors</h2>
-            <p class="text-xl text-gray-600">
-                Expand your business with our high-quality pickleball products and comprehensive support
-            </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            <!-- Partner Type 1 -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-shopping-bag text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Retail Stores</h3>
-                <p class="text-gray-600 mb-4 text-center">
-                    Stock our premium paddles to enhance your sports equipment offerings
-                </p>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Attractive retail margins</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Point-of-sale materials</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Partner Type 2 -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-handshake-o text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Agents</h3>
-                <p class="text-gray-600 mb-4 text-center">
-                    Represent our brand with attractive commission opportunities
-                </p>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Lucrative commission structure</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Sales training &amp; support</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Partner Type 3 -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-truck text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Distributors</h3>
-                <p class="text-gray-600 mb-4 text-center">
-                    Distribute our products across your region with exclusive rights
-                </p>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Competitive wholesale pricing</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Regional exclusivity options</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Partner Type 4 -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-cubes text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold text-center mb-4">Wholesalers</h3>
-                <p class="text-gray-600 mb-4 text-center">
-                    Purchase in bulk for redistribution to retailers in your network
-                </p>
-                <ul class="text-gray-600 space-y-2">
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Bulk pricing discounts</span>
-                    </li>
-                    <li class="flex items-start">
-                        <i class="fa fa-check text-primary mt-1 mr-2"></i>
-                        <span>Flexible order quantities</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="mt-16 text-center">
-            <a href="#contact" class="inline-block bg-secondary hover:bg-secondary/90 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl">
-                Apply for Partnership <i class="fa fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- Factory Advantages Section -->
-<section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Why Work With Us</h2>
-        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Our capabilities benefit both custom clients and distribution partners
-        </p>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Advantage 1 -->
-            <div class="text-center p-6 card-hover bg-white rounded-xl shadow-sm">
-                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-paint-brush text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Custom Design Expertise</h3>
-                <p class="text-gray-600">
-                    From brand identity to club colors, we create paddles that stand out in the market.
-                </p>
-            </div>
-
-            <!-- Advantage 2 -->
-            <div class="text-center p-6 card-hover bg-white rounded-xl shadow-sm">
-                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-industry text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Reliable Production</h3>
-                <p class="text-gray-600">
-                    Consistent quality and on-time delivery for both custom orders and wholesale partners.
-                </p>
-            </div>
-
-            <!-- Advantage 3 -->
-            <div class="text-center p-6 card-hover bg-white rounded-xl shadow-sm">
-                <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <i class="fa fa-users text-2xl text-primary"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Partner Support</h3>
-                <p class="text-gray-600">
-                    Comprehensive assistance for our partners with marketing and product knowledge.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Brands Section -->
-<section class="py-16 bg-white">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">Our Own Brands</h2>
-        
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <!-- JFPICK Brand -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                        <i class="fa fa-table-tennis text-2xl text-primary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-primary">JFPICK</h3>
-                </div>
-                <p class="text-gray-600 mb-4">
-                    Our middle and low-end brand offering quality pickleball paddles at affordable prices, perfect for beginners and recreational players.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-2">
-                    <span class="bg-blue-50 px-3 py-1 rounded-full text-sm">Middle &amp; Low-end</span>
-                    <span class="bg-custom/10 text-custom px-3 py-1 rounded-full text-sm"><i class="fa fa-paint-brush mr-1"></i> Customizable</span>
-                </div>
-            </div>
-
-            <!-- JOYCSPS Brand -->
-            <div class="bg-light rounded-xl shadow-md p-8 card-hover border border-gray-100">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 rounded-full bg-orange-100 flex items-center justify-center mr-4">
-                        <i class="fa fa-trophy text-2xl text-secondary"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-secondary">JOYCSPS</h3>
-                </div>
-                <p class="text-gray-600 mb-4">
-                    Our premium high-end brand featuring top-of-the-line materials and craftsmanship, designed for serious players and professionals.
-                </p>
-                <div class="flex flex-wrap gap-2 mb-2">
-                    <span class="bg-orange-50 px-3 py-1 rounded-full text-sm">High-end</span>
-                    <span class="bg-custom/10 text-custom px-3 py-1 rounded-full text-sm"><i class="fa fa-paint-brush mr-1"></i> Customizable</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section with Dual Focus -->
-<section id="contact" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 text-dark">Get In Touch</h2>
-        <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-            Whether you need custom solutions or partnership information, we're ready to help
-        </p>
-
-        <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div class="md:flex">
-                <div class="md:w-1/2 bg-primary p-8 text-white">
-                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
-                    <p class="mb-8 opacity-90">
-                        Reach out through any of these channels for custom inquiries or partnership opportunities
-                    </p>
-                    
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">&nbsp;One Commitment to Quality&amp;Service</h3>
                     <div class="space-y-6">
-                        <div class="flex items-start">
-                            <i class="fa fa-whatsapp text-xl mt-1 mr-4"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-tag text-secondary"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold mb-1">WhatsApp</h4>
-                                <p class="opacity-90">+86 19137644243</p>
+                                <h4 class="font-bold text-lg mb-2"></h4>
+                                <p class="text-gray-600">Offering high-value pickleball equipment for beginners and recreational players, combining affordability with reliability.</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fa fa-weixin text-xl mt-1 mr-4"></i>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-diamond text-accent"></i>
+                            </div>
                             <div>
-                                <h4 class="font-semibold mb-1">WeChat</h4>
-                                <p class="opacity-90">1913764424</p>
+                                <h4 class="font-bold text-lg mb-2"></h4>
+                                <p class="text-gray-600">Crafted for professional players and enthusiasts, utilizing premium materials and advanced manufacturing techniques for superior performance.</p>
                             </div>
                         </div>
-                        
-                        <div class="flex items-start">
-                            <i class="fa fa-envelope text-xl mt-1 mr-4"></i>
-                            <div>
-                                <h4 class="font-semibold mb-1">Email</h4>
-                                <p class="opacity-90">ivanadengchina@gmail.com</p>
-                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品系列 -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">Product Range</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our extensive lineup of pickleball paddles caters to diverse player needs and budgets</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品卡片1 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/0b89ae190ae54ae998cd4e431e3b7f35~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945169&amp;x-signature=inx%2Fn7VbjKFLEwFEyfhMfcURB6U%3D" alt="Fiberglass pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Fiberglass Paddle</h3>
+                        <p class="text-gray-600 mb-4">Lightweight and durable, ideal for beginners and recreational players with excellent control.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-secondary/10 text-secondary text-sm px-3 py-1 rounded-full">JFPICK</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Mid-Range</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品卡片2 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/a86d2d834072439c925ba81205d14019~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945225&amp;x-signature=CCo3uDUZIktvS4o1fgrLATgGd64%3D" alt="Carbon Fiber pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Carbon Fiber Paddle</h3>
+                        <p class="text-gray-600 mb-4">T300/T700/T800 Carbon Fiber with cold/thermoformed press for powerful performance.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JOYCSPS</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品卡片3 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/2b7a00454df44880be78fc73d6e553de~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945243&amp;x-signature=hsH4alDwK9Hxr437TR4Cw2nsOwA%3D" alt="Carbon Fiber Weave pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Carbon Fiber Weave</h3>
+                        <p class="text-gray-600 mb-4">3K/12K/18K Carbon Fiber with cold/thermoformed press for varied playing styles.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JOYCSPS</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品卡片4 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/3cd3bf3cb39f4e23911c1608e405e966~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753946615&amp;x-signature=uDIlbYLgiDCgOS7%2BY0NigWEtVjo%3D" alt="3D Carbon Fiber pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">3D Carbon Fiber</h3>
+                        <p class="text-gray-600 mb-4">3D 3k/18K Carbon Fiber construction for professional-level power and control.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JOYCSPS</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品卡片5 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/35c6316e61c84a4297b1413ff9e66c56~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945358&amp;x-signature=D46EcVBMMc6VJcqWAOIB%2BzUgGXE%3D" alt="KEVLAR pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">KEVLAR Paddle</h3>
+                        <p class="text-gray-600 mb-4">KEVLAR construction with cold/thermoformed press for exceptional durability and shock absorption.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JOYCSPS</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 产品卡片6 -->
+                <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
+                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/ae613f108f1e449795a5620a7628554c~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945508&amp;x-signature=VmehjwzWaRPuGNDBEIOa7IIZobc%3D" alt="Titanium pickleball paddle" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Titanium Paddle</h3>
+                        <p class="text-gray-600 mb-4">Titanium with thermoformed press for powerful performance and stability.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-accent/10 text-accent text-sm px-3 py-1 rounded-full">JOYCSPS</span>
+                            <span class="bg-gray-100 text-gray-600 text-sm px-3 py-1 rounded-full">Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新核心技术板块 -->
+    <section id="core-tech" class="py-16 bg-white border-t border-gray-200">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">New Inner Core Technology</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Innovative core technologies for superior performance and feel</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h3 class="text-2xl font-bold text-primary mb-6">Advanced Core Construction</h3>
+                    
+                    <div class="mb-8">
+                        <h4 class="font-bold text-xl mb-4 text-secondary">Cold Cutting Technology</h4>
+                        <div class="pl-6 border-l-2 border-secondary/30">
+                            <p class="mb-3"><span class="font-semibold">PP &amp; Aramid:</span> Proprietary blend offering exceptional durability and responsive feedback during play.</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-xl mb-4 text-secondary">Hot Press Technology</h4>
+                        <div class="pl-6 border-l-2 border-secondary/30 space-y-4">
+                            <p><span class="font-semibold">Gen1:</span> Foundational core technology with balanced performance characteristics.</p>
+                            <p><span class="font-semibold">Gen2:</span> Enhanced rebound properties with improved energy transfer.</p>
+                            <p><span class="font-semibold">Gen3:</span> Advanced material integration for optimized weight distribution.</p>
+                            <p><span class="font-semibold">Gen4 Eva foam + PP:</span> Premium blend for superior comfort and control.</p>
+                            <p><span class="font-semibold">Gen4 TrueFoam:</span> Revolutionary foam technology for unmatched feel and power.</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="md:w-1/2 p-8">
-                    <h3 class="text-2xl font-bold mb-6 text-dark">Inquiry Form</h3>
-                    <form>
-                        <div class="mb-4">
-                            <label for="name" class="block text-gray-700 mb-2">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="John Doe">
+                <div class="order-1 lg:order-2">
+                    <!-- 预留图片位置 -->
+                    <div class="rounded-lg overflow-hidden shadow-md border border-gray-200">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/234f908987a741748f71890cbc7341d8~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753946953&amp;x-signature=Cf%2BLqqxR%2FwdzIWA4CrRpXRf3BR4%3D" alt="Inner core technology visualization" class="w-full h-auto">
+                        <div class="p-4 bg-gray-50 text-center text-sm text-gray-500">
+                            Core technology visualization and material comparison
                         </div>
-                        
-                        <div class="mb-4">
-                            <label for="organization" class="block text-gray-700 mb-2">Organization/Company</label>
-                            <input type="text" id="organization" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your company name">
-                        </div>
-                        
-                        <div class="mb-4">
-                            <label for="inquiry-type" class="block text-gray-700 mb-2">Inquiry Type</label>
-                            <select id="inquiry-type" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-                                <option value="">Select inquiry type</option>
-                                <option value="custom-brand">Brand Customization</option>
-                                <option value="custom-club">Club Customization</option>
-                                <option value="retail">Retail Partnership</option>
-                                <option value="agent">Agent Opportunity</option>
-                                <option value="distributor">Distribution Partnership</option>
-                                <option value="wholesale">Wholesale Inquiry</option>
-                            </select>
-                        </div>
-                        
-                        <div class="mb-6">
-                            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Tell us about your requirements or partnership interests..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="w-full bg-secondary hover:bg-secondary/90 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">
-                            Send Inquiry <i class="fa fa-paper-plane ml-2"></i>
-                        </button>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-12">
-    <div class="container mx-auto px-6">
-        <div class="md:flex justify-between items-center">
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-2xl font-bold mb-2">Pickleball Factory</h3>
-                <p class="text-gray-400">Custom Solutions &amp; Trusted Partnerships</p>
+    <!-- 定制服务 -->
+    <section id="services" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">Customization Services</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our professional design team provides brand design and customization services, supporting OEM&amp;ODM</p>
             </div>
-            
-            <div class="flex space-x-4">
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition duration-300">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition duration-300">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition duration-300">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-primary transition duration-300">
-                    <i class="fa fa-linkedin"></i>
-                </a>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 服务卡片1 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
+                    <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-paint-brush text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Brand Design</h3>
+                    <p class="text-gray-600">Our professional designers can create unique brand identities and visual aesthetics for distinctive products.</p>
+                </div>
+
+                <!-- 服务卡片2 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
+                    <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-cogs text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Product Customization</h3>
+                    <p class="text-gray-600">Customize pickleball paddle materials, colors, graphics, and specifications to match your requirements.</p>
+                </div>
+
+                <!-- 服务卡片3 -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
+                    <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-industry text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">OEM &amp; ODM</h3>
+                    <p class="text-gray-600">Comprehensive contract manufacturing and original design services to launch your brand efficiently.</p>
+                </div>
             </div>
         </div>
-        
-        <hr class="border-gray-700 my-8">
-        
-        <div class="text-center text-gray-400 text-sm">
-            <p>© 2023 Pickleball Factory. Custom manufacturing and distribution partners.</p>
+    </section>
+
+    <!-- 质量保障 -->
+    <section id="quality" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">Quality Assurance</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our commitment to quality spans every aspect of production, from raw materials to finished products</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-6">Professional Production Process</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-cogs text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Professional Machinery</h4>
+                                <p class="text-gray-600">We utilize advanced production equipment and techniques ensuring exceptional quality and performance in every product.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-users text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Skilled Workforce</h4>
+                                <p class="text-gray-600">Our workers undergo rigorous training and evaluation, bringing extensive experience and craftsmanship to production.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-sitemap text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Standard Assembly Lines</h4>
+                                <p class="text-gray-600">We maintain standardized production processes and assembly lines ensuring consistent quality across all products.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                <i class="fa fa-archive text-secondary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-2">Specialized Warehousing</h4>
+                                <p class="text-gray-600">Dedicated facilities store products safely and arrange shipments in an organized manner for efficient delivery.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/36592edfb8d3417590406fe664149835~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753947013&amp;x-signature=hApfi6N%2FHix6i5YiTeyIXfSUvdY%3D" alt="Quality control in production" class="rounded-lg shadow-md w-full h-auto">
+                </div>
+            </div>
         </div>
-    </div>
-</footer>
+    </section>
 
-<!-- Back to Top Button -->
-<button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:bg-primary/90 transition duration-300">
-    <i class="fa fa-arrow-up"></i>
-</button>
+    <!-- 联系我们 -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.8rem,3vw,2.5rem)] font-bold text-primary mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">For more details, please contact us through the following channels</p>
+            </div>
 
-<script>
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <div class="bg-white rounded-lg p-8 h-full shadow-sm border border-gray-100">
+                        <h3 class="text-2xl font-bold text-primary mb-6">Contact Information</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                    <i class="fa fa-whatsapp text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">WhatsApp</h4>
+                                    <p class="text-gray-600">+86 19137644243</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                    <i class="fa fa-weixin text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">WeChat</h4>
+                                    <p class="text-gray-600">19137644243</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-secondary/10 p-3 rounded-lg mt-1">
+                                    <i class="fa fa-envelope text-secondary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-lg mb-1">Email</h4>
+                                    <p class="text-gray-600">lv618527@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-bold text-lg mb-4">Connect With Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/profile.php?id=61565531185651" target="_blank" class="bg-[#1877F2]/10 text-[#1877F2] w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#1877F2]/20 transition-colors">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://instagram.com/ivan.adeng" target="_blank" class="bg-[#E1306C]/10 text-[#E1306C] w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#E1306C]/20 transition-colors">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="https://jinfengyundong.en.alibaba.com/" target="_blank" class="bg-[#FF6B00]/10 text-[#FF6B00] w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#FF6B00]/20 transition-colors">
+                                    <i class="fa fa-shopping-bag"></i>
+                                </a>
+                                <a href="https://ivanadeng019.github.io/Pickleball-china-factory/" target="_blank" class="bg-secondary/10 text-secondary w-10 h-10 rounded-full flex items-center justify-center hover:bg-secondary/20 transition-colors">
+                                    <i class="fa fa-globe"></i>
+                                </a>
+                            </div>
+                            
+                            <div class="mt-8 pt-6 border-t border-gray-100">
+                                <h4 class="font-bold text-lg mb-3">Visit Our Pages</h4>
+                                <ul class="space-y-2">
+                                    <li>
+                                        <a href="https://www.facebook.com/profile.php?id=61565531185651" target="_blank" class="flex items-center text-secondary hover:underline">
+                                            <i class="fa fa-facebook mr-2"></i> Facebook Page
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/ivan.adeng" target="_blank" class="flex items-center text-secondary hover:underline">
+                                            <i class="fa fa-instagram mr-2"></i> Instagram Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://jinfengyundong.en.alibaba.com/" target="_blank" class="flex items-center text-secondary hover:underline">
+                                            <i class="fa fa-shopping-bag mr-2"></i> Alibaba Store
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ivanadeng019.github.io/Pickleball-china-factory/" target="_blank" class="flex items-center text-secondary hover:underline">
+                                            <i class="fa fa-globe mr-2"></i> Official Website
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bg-primary rounded-lg p-8 text-white h-full">
+                        <h3 class="text-2xl font-bold mb-6">Send a Message</h3>
+                        <form>
+                            <div class="mb-6">
+                                <label for="name" class="block text-white/90 mb-2">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-6">
+                                <label for="email" class="block text-white/90 mb-2">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-white/90 mb-2">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/30" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-white text-primary font-bold py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-primary text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-white text-3xl"><i class="fa fa-cube"></i></span>
+                        <span class="font-bold text-xl">JFPICK <span class="text-gray-300">&amp;</span> JOYCSPS</span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Professional pickleball manufacturers delivering premium equipment and customization services worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61565531185651" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/ivan.adeng" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="https://jinfengyundong.en.alibaba.com/" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-shopping-bag"></i>
+                        </a>
+                        <a href="https://ivanadeng019.github.io/Pickleball-china-factory/" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i class="fa fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#core-tech" class="text-gray-300 hover:text-white transition-colors">Core Technology</a></li>
+                        <li><a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#quality" class="text-gray-300 hover:text-white transition-colors">Quality Assurance</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Products</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Fiberglass Paddles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Carbon Fiber Paddles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">3K/12K/18K Carbon Paddles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">3D Carbon Paddles</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">KEVLAR Paddles</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-6">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-whatsapp text-gray-300 mt-1"></i>
+                            <span class="text-gray-300">+86 19137644243</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-weixin text-gray-300 mt-1"></i>
+                            <span class="text-gray-300">19137644243</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-envelope text-gray-300 mt-1"></i>
+                            <span class="text-gray-300">lv618527@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2025 JFPICK &amp; JOYCSPS. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 opacity-0 translate-y-10">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script>
+        // 移动端菜单切换
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // 导航栏滚动效果
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('py-2', 'shadow');
+                navbar.classList.remove('py-3');
+            } else {
+                navbar.classList.add('py-3');
+                navbar.classList.remove('py-2', 'shadow');
+            }
+        });
+        
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // 关闭移动端菜单
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+        
+        // 回到顶部按钮
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'translate-y-10');
+                backToTopButton.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'translate-y-10');
+                backToTopButton.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
                 behavior: 'smooth'
             });
         });
-    });
 
-    // Add animation on scroll
-    window.addEventListener('scroll', function() {
-        const elements = document.querySelectorAll('.card-hover');
-        elements.forEach(element => {
-            const position = element.getBoundingClientRect();
-            // If element is in viewport
-            if(position.top < window.innerHeight && position.bottom >= 0) {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
-            }
+        // 视频加载和播放状态处理
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            
+            // 视频加载错误处理
+            video.addEventListener('error', function() {
+                console.error('Video error occurred:', video.error);
+                // 显示更详细的错误信息
+                const errorContainer = video.nextElementSibling;
+                if (errorContainer) {
+                    errorContainer.innerHTML += `<p class="mt-2 text-red-400">Error: Could not load video. Please check file exists.</p>`;
+                }
+            });
         });
-    });
+    </script>
 
-    // Initialize animations
-    window.dispatchEvent(new Event('scroll'));
-</script>
+
+</body></html>
