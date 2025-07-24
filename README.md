@@ -619,4 +619,3 @@
     // Initialize animations
     window.dispatchEvent(new Event('scroll'));
 </script>
-
