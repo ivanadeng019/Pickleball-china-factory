@@ -9,9 +9,9 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#2D3748', // Ê∑±ÁÅ∞Ëâ≤‰∏ªËâ≤Ë∞ÉÔºåÁßëÊäÄÊÑü
-                        secondary: '#3182CE', // ËìùËâ≤ËæÖÂä©Ëâ≤
-                        accent: '#ED8936', // Ê©ôËâ≤Âº∫Ë∞ÉËâ≤
+                        primary: '#2D3748', // …Óª“…´÷˜…´µ˜£¨ø∆ºº∏–
+                        secondary: '#3182CE', // ¿∂…´∏®÷˙…´
+                        accent: '#ED8936', // ≥»…´«øµ˜…´
                         light: '#F7FAFC',
                         dark: '#1A202C'
                     },
@@ -48,11 +48,16 @@
                 justify-content: center;
                 color: white;
             }
+            .video-wrapper {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
         }
     </style>
 </head>
 <body class="font-sans bg-light text-dark antialiased">
-    <!-- ÂØºËà™Ê†è -->
+    <!-- µº∫Ω¿∏ -->
     <header class="fixed w-full bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50 transition-all duration-300" id="navbar">
         <div class="container mx-auto px-4 py-3 flex items-center justify-between">
             <a href="#" class="flex items-center space-x-2">
@@ -71,7 +76,7 @@
                 <i class="fa fa-bars"></i>
             </button>
         </div>
-        <!-- ÁßªÂä®Á´ØËèúÂçï -->
+        <!-- “∆∂Ø∂À≤Àµ• -->
         <div class="md:hidden hidden bg-white absolute w-full border-b border-gray-200" id="mobile-menu">
             <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
                 <a href="#about" class="text-gray-700 hover:text-secondary transition-colors py-2">About</a>
@@ -84,7 +89,7 @@
         </div>
     </header>
 
-    <!-- Ëã±ÈõÑÂå∫Âüü -->
+    <!-- ”¢–€«¯”Ú -->
     <section class="pt-24 pb-16 md:pt-32 md:pb-24 bg-gradient-tech text-white">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center">
@@ -110,7 +115,7 @@
         </div>
     </section>
 
-    <!-- ËßÜÈ¢ëÂå∫Âüü -->
+    <!--  ”∆µ«¯”Ú -->
     <section class="py-16 bg-white border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center mb-10">
@@ -120,25 +125,27 @@
             
             <div class="max-w-4xl mx-auto">
                 <div class="video-container rounded-lg shadow-md mb-4 overflow-hidden">
-                    <!-- Êú¨Âú∞ËßÜÈ¢ëÊí≠Êîæ -->
-                    <video controls="" class="w-full h-full object-contain" poster="https://picsum.photos/id/28/1280/720" preload="metadata">
-                        <source src="factory.mp4" type="video/mp4">
-                        <source src="factory.webm" type="video/webm">
-                        <source src="factory.ogg" type="video/ogg">
-                        <!-- ËßÜÈ¢ëÊó†Ê≥ïÊí≠ÊîæÊó∂ÊòæÁ§∫ÁöÑÂÜÖÂÆπ -->
-                        <div class="text-center p-8">
-                            <i class="fa fa-exclamation-circle text-5xl mb-4"></i>
-                            <p>Your browser does not support the video tag.</p>
-                            <p class="mt-2">Please download the video to view: <a href="factory.mp4" class="text-secondary hover:underline">factory.mp4</a></p>
-                        </div>
-                    </video>
+                    <!-- ±æµÿ ”∆µ≤•∑≈ -->
+                    <div class="video-wrapper">
+                        <video controls class="w-full h-full object-contain" poster="https://picsum.photos/id/28/1280/720" preload="metadata">
+                            <source src="factory.mp4" type="video/mp4">
+                            <source src="factory.webm" type="video/webm">
+                            <source src="factory.ogg" type="video/ogg">
+                            <!--  ”∆µŒﬁ∑®≤•∑≈ ±œ‘ æµƒƒ⁄»› -->
+                            <div class="text-center p-8">
+                                <i class="fa fa-exclamation-circle text-5xl mb-4"></i>
+                                <p>Your browser does not support the video tag.</p>
+                                <p class="mt-2">Please download the video to view: <a href="factory.mp4" class="text-secondary hover:underline">factory.mp4</a></p>
+                            </div>
+                        </video>
+                    </div>
                 </div>
                 <p class="text-sm text-gray-500 text-center">Production process and factory tour video</p>
             </div>
         </div>
     </section>
 
-    <!-- ÂÖ≥‰∫éÊàë‰ª¨ -->
+    <!-- πÿ”⁄Œ“√« -->
     <section id="about" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -178,7 +185,7 @@
         </div>
     </section>
 
-    <!-- ‰∫ßÂìÅÁ≥ªÂàó -->
+    <!-- ≤˙∆∑œµ¡– -->
     <section id="products" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -188,7 +195,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- ‰∫ßÂìÅÂç°Áâá1 -->
+                <!-- ≤˙∆∑ø®∆¨1 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/0b89ae190ae54ae998cd4e431e3b7f35~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945169&amp;x-signature=inx%2Fn7VbjKFLEwFEyfhMfcURB6U%3D" alt="Fiberglass pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -201,7 +208,7 @@
                     </div>
                 </div>
 
-                <!-- ‰∫ßÂìÅÂç°Áâá2 -->
+                <!-- ≤˙∆∑ø®∆¨2 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/a86d2d834072439c925ba81205d14019~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945225&amp;x-signature=CCo3uDUZIktvS4o1fgrLATgGd64%3D" alt="Carbon Fiber pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -214,7 +221,7 @@
                     </div>
                 </div>
 
-                <!-- ‰∫ßÂìÅÂç°Áâá3 -->
+                <!-- ≤˙∆∑ø®∆¨3 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/2b7a00454df44880be78fc73d6e553de~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945243&amp;x-signature=hsH4alDwK9Hxr437TR4Cw2nsOwA%3D" alt="Carbon Fiber Weave pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -227,7 +234,7 @@
                     </div>
                 </div>
 
-                <!-- ‰∫ßÂìÅÂç°Áâá4 -->
+                <!-- ≤˙∆∑ø®∆¨4 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p3-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/3cd3bf3cb39f4e23911c1608e405e966~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753946615&amp;x-signature=uDIlbYLgiDCgOS7%2BY0NigWEtVjo%3D" alt="3D Carbon Fiber pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -240,7 +247,7 @@
                     </div>
                 </div>
 
-                <!-- ‰∫ßÂìÅÂç°Áâá5 -->
+                <!-- ≤˙∆∑ø®∆¨5 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/35c6316e61c84a4297b1413ff9e66c56~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945358&amp;x-signature=D46EcVBMMc6VJcqWAOIB%2BzUgGXE%3D" alt="KEVLAR pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -253,7 +260,7 @@
                     </div>
                 </div>
 
-                <!-- ‰∫ßÂìÅÂç°Áâá6 -->
+                <!-- ≤˙∆∑ø®∆¨6 -->
                 <div class="bg-white rounded-lg shadow-sm overflow-hidden card-hover border border-gray-100">
                     <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/ae613f108f1e449795a5620a7628554c~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753945508&amp;x-signature=VmehjwzWaRPuGNDBEIOa7IIZobc%3D" alt="Titanium pickleball paddle" class="w-full h-64 object-cover">
                     <div class="p-6">
@@ -269,7 +276,7 @@
         </div>
     </section>
 
-    <!-- Êñ∞Ê†∏ÂøÉÊäÄÊúØÊùøÂùó -->
+    <!-- –¬∫À–ƒºº ı∞ÂøÈ -->
     <section id="core-tech" class="py-16 bg-white border-t border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -302,7 +309,7 @@
                 </div>
                 
                 <div class="order-1 lg:order-2">
-                    <!-- È¢ÑÁïôÂõæÁâá‰ΩçÁΩÆ -->
+                    <!-- ‘§¡ÙÕº∆¨Œª÷√ -->
                     <div class="rounded-lg overflow-hidden shadow-md border border-gray-200">
                         <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/234f908987a741748f71890cbc7341d8~tplv-a9rns2rl98-image.image?rk3s=8e244e95&amp;rrcfp=e75484ac&amp;x-expires=1753946953&amp;x-signature=Cf%2BLqqxR%2FwdzIWA4CrRpXRf3BR4%3D" alt="Inner core technology visualization" class="w-full h-auto">
                         <div class="p-4 bg-gray-50 text-center text-sm text-gray-500">
@@ -314,7 +321,7 @@
         </div>
     </section>
 
-    <!-- ÂÆöÂà∂ÊúçÂä° -->
+    <!-- ∂®÷∆∑˛ŒÒ -->
     <section id="services" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -324,7 +331,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- ÊúçÂä°Âç°Áâá1 -->
+                <!-- ∑˛ŒÒø®∆¨1 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
                     <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                         <i class="fa fa-paint-brush text-secondary text-2xl"></i>
@@ -333,7 +340,7 @@
                     <p class="text-gray-600">Our professional designers can create unique brand identities and visual aesthetics for distinctive products.</p>
                 </div>
 
-                <!-- ÊúçÂä°Âç°Áâá2 -->
+                <!-- ∑˛ŒÒø®∆¨2 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
                     <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                         <i class="fa fa-cogs text-secondary text-2xl"></i>
@@ -342,7 +349,7 @@
                     <p class="text-gray-600">Customize pickleball paddle materials, colors, graphics, and specifications to match your requirements.</p>
                 </div>
 
-                <!-- ÊúçÂä°Âç°Áâá3 -->
+                <!-- ∑˛ŒÒø®∆¨3 -->
                 <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 card-hover">
                     <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
                         <i class="fa fa-industry text-secondary text-2xl"></i>
@@ -354,7 +361,7 @@
         </div>
     </section>
 
-    <!-- Ë¥®Èáè‰øùÈöú -->
+    <!-- ÷ ¡ø±£’œ -->
     <section id="quality" class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -412,7 +419,7 @@
         </div>
     </section>
 
-    <!-- ËÅîÁ≥ªÊàë‰ª¨ -->
+    <!-- ¡™œµŒ“√« -->
     <section id="contact" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
@@ -526,7 +533,7 @@
         </div>
     </section>
 
-    <!-- È°µËÑö -->
+    <!-- “≥Ω≈ -->
     <footer class="bg-primary text-white py-12">
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -591,18 +598,18 @@
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                <p>¬© 2025 JFPICK &amp; JOYCSPS. All rights reserved.</p>
+                <p>? 2025 JFPICK &amp; JOYCSPS. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- ÂõûÂà∞È°∂ÈÉ®ÊåâÈíÆ -->
+    <!-- ªÿµΩ∂•≤ø∞¥≈• -->
     <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 opacity-0 translate-y-10">
         <i class="fa fa-chevron-up"></i>
     </button>
 
     <script>
-        // ÁßªÂä®Á´ØËèúÂçïÂàáÊç¢
+        // “∆∂Ø∂À≤Àµ•«–ªª
         const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
         
@@ -610,7 +617,7 @@
             mobileMenu.classList.toggle('hidden');
         });
         
-        // ÂØºËà™Ê†èÊªöÂä®ÊïàÊûú
+        // µº∫Ω¿∏πˆ∂Ø–ßπ˚
         const navbar = document.getElementById('navbar');
         
         window.addEventListener('scroll', () => {
@@ -623,7 +630,7 @@
             }
         });
         
-        // Âπ≥ÊªëÊªöÂä®
+        // ∆Ωª¨πˆ∂Ø
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -637,7 +644,7 @@
                         behavior: 'smooth'
                     });
                     
-                    // ÂÖ≥Èó≠ÁßªÂä®Á´ØËèúÂçï
+                    // πÿ±’“∆∂Ø∂À≤Àµ•
                     if (!mobileMenu.classList.contains('hidden')) {
                         mobileMenu.classList.add('hidden');
                     }
@@ -645,7 +652,7 @@
             });
         });
         
-        // ÂõûÂà∞È°∂ÈÉ®ÊåâÈíÆ
+        // ªÿµΩ∂•≤ø∞¥≈•
         const backToTopButton = document.getElementById('back-to-top');
         
         window.addEventListener('scroll', () => {
@@ -662,6 +669,21 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
+            });
+        });
+
+        //  ”∆µº”‘ÿ∫Õ≤•∑≈◊¥Ã¨¥¶¿Ì
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.querySelector('video');
+            
+            //  ”∆µº”‘ÿ¥ÌŒÛ¥¶¿Ì
+            video.addEventListener('error', function() {
+                console.error('Video error occurred:', video.error);
+                // œ‘ æ∏¸œÍœ∏µƒ¥ÌŒÛ–≈œ¢
+                const errorContainer = video.nextElementSibling;
+                if (errorContainer) {
+                    errorContainer.innerHTML += `<p class="mt-2 text-red-400">Error: Could not load video. Please check file exists.</p>`;
+                }
             });
         });
     </script>
