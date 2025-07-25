@@ -130,13 +130,21 @@
             <div class="max-w-4xl mx-auto">
                 <div class="video-container rounded-lg shadow-md mb-4 overflow-hidden">
                     <div class="video-wrapper">
+                        <!-- GitHub Pages兼容的视频播放方案 -->
                         <video controls class="w-full h-full object-contain" poster="https://picsum.photos/id/28/1280/720" preload="metadata">
-                            <source src="factory.mp4" type="video/mp4">
+                            <!-- 1. 首选: 使用GitHub Pages仓库中的视频路径 -->
+                            <source src="/assets/videos/factory.mp4" type="video/mp4">
+                            
+                            <!-- 2. 备选: 使用GitHub原始文件链接 -->
+                            <source src="https://raw.githubusercontent.com/your-username/your-repo/main/assets/videos/factory.mp4" type="video/mp4">
+                            
+                            <!-- 3. 备选: 使用视频托管服务链接 (推荐) -->
+                            <source src="https://video-hosting-service.com/your-video-link.mp4" type="video/mp4">
                             
                             <div class="w-full h-full flex flex-col items-center justify-center text-white p-6 text-center">
                                 <i class="fa fa-film text-5xl mb-4 text-gray-400"></i>
                                 <p class="mb-2">Production video could not load.</p>
-                                <p class="text-sm">Please ensure the file "factory.mp4" is in the same directory as this HTML file.</p>
+                                <p class="text-sm">Please check the video URL or contact support for assistance.</p>
                             </div>
                         </video>
                     </div>
@@ -617,5 +625,25 @@
                 navbar.classList.add('py-3');
                 navbar.classList.remove('py-2', 'shadow');
             }
+        });
+        
+        // 回到顶部按钮功能
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('opacity-0', 'translate-y-10');
+                backToTopButton.classList.add('opacity-100', 'translate-y-0');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'translate-y-10');
+                backToTopButton.classList.remove('opacity-100', 'translate-y-0');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
         </script></body></html>
